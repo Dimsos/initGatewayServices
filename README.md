@@ -21,4 +21,18 @@ Ejecutar:
 - @reboot /home/pi/gateway-Service/init-python.sh > /tmp/HUMTEMP_LEDS_SWITCH.log 2>&1
 - reboot -n
 - probar curl localhost:7777
+Cambiar topico gateway-service:
 
+API MQTT 
+	Al iniciar el servicio la primera vez se ejecuta con este topico  "gateway/cambiartopic2/config" el cual se debe de cambiar mediante un 
+	publicación mqtt, la cual configura el servidor del mqtt y el topico: NO PONER EL MISMO TOPICO QUE ANTERIORMENTE SI NO HAY QUE REINICIAR EL SERVICIO PENDIENTE DE ACTUALIZACION
+ENVIAR A  TOPICO : gateway/cambiartopic12/config (comprobar en archivo de config  configMQTT.json)
+{
+	"broker":"gesinen.es",
+	"topic":"b827eb9fd77c/application/2/gatewayService",
+	"client":"b827eb9fd77c",
+	"password":"gesinen2110",
+	"username":"gesinen",
+	"port":8882
+}
+Recibir datos SUBSCRIBE TO topic + /data ejemplo : gateway/cambiartopic/data
