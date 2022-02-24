@@ -10,6 +10,8 @@ Ejecutar:
 
 #Para crear servicios y usuarios:
 - git clone https://github.com/danielei9/initGatewayServices
+- git clone https://github.com/danielei9/gatewayServiceConfig
+- git clone https://github.com/danielei9/gateway-Service
 - cd initGatewayServices
 - chmod +x initGatewayServices.sh
 - sudo ./initGatewayServices.sh
