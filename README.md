@@ -13,3 +13,6 @@ Ejecutar:
 - cd initGatewayServices
 - chmod +x initGatewayServices.sh
 - sudo ./initGatewayServices.sh
+- chmod +x createCron.sh
+- sudo ./createCron.sh
+
