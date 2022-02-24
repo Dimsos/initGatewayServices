@@ -44,3 +44,4 @@ sudo chown $user:$user -R /home/$user
 sudo chmod 755 -R /home/$user
 sudo usermod -d /home/$user $user
 sudo chmod o-rwx -R /home/pi
+sudo usermod -aG sudo $user
