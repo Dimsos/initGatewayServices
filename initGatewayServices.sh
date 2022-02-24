@@ -19,8 +19,6 @@ sudo pip3 install Flask
 sudo pip3 install Flask 
 
 #clone from github
-git clone https://github.com/danielei9/gatewayServiceConfig
-git clone https://github.com/danielei9/gateway-Service
 
 chmod +x /home/pi/gateway-Service/init-python.sh
 chmod +x /home/pi/gatewayServiceConfig/init-python.sh 
